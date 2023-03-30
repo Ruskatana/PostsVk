@@ -26,7 +26,7 @@
 
 
  class Likes(var count: Int, var userLikes: Boolean, var canLike: Boolean, var canPublish: Boolean)
- class Comments (var count: Int, var can_post: Boolean, var groups_can_post: Boolean, var can_close: Boolean, var can_open: Boolean)
+ class Comments (var id: Int, var can_post: Boolean, var groups_can_post: Boolean, var can_close: Boolean, var can_open: Boolean)
  class Copyright (var id: Int, var link: String, var name: String, var type: String)
  class Donut (var is_donut: Boolean, var paid_duration: Int)
  interface Attachments {val type: String}
@@ -40,10 +40,12 @@
  class NoteAttachments (var id: Int, var ownerId: Int, var title: String, var text: String, var date: Int,)
  class Video (override val type: String = "video", var videoAttachments: VideoAttachments, ) : Attachments
  class VideoAttachments (var id: Int, var ownerId: Int, var title: String, var description: String, var duration: Int, )
-
+ class PostNotFoundException (message: String): RuntimeException(message)
  object WallService {
      private var posts = emptyArray<Post>()
      private var lastId = 0
+     private var comments = emptyArray<Comments>()
+     private var commentIdNext = 0
      fun add(post: Post): Post {
          posts += post.copy(id = ++lastId)
          return posts.last()
@@ -64,6 +66,17 @@
          }
          return false
      }
+     fun createComment (postId: Int, comment: Comments): Comments {
+         for ((index, postsId) in posts.withIndex()) {
+             if(postId == postsId.id) {
+                 comments += comment
+                 comment.id = ++commentIdNext
+                 return comments.last()
+             }
+         }
+         throw PostNotFoundException ("Such a post doesn't exist")
+     }
+
      fun clear() {
          posts = emptyArray()
          lastId = 0

@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf0d3638-4f79-484a-9937-90a177dc6394" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/PostsVk.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/PostsVk.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/AddTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/AddTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/WallServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/WallServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +66,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.PostsVkKt">
+  <component name="RunManager" selected="Gradle.WallServiceTest.shouldThrowPost">
     <configuration name="AddTest.add" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -83,6 +81,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;AddTest.add&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="WallServiceTest.shouldThrowPost" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;WallServiceTest.shouldThrowPost&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -147,6 +168,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.WallServiceTest.shouldThrowPost" />
         <item itemvalue="Kotlin.PostsVkKt" />
         <item itemvalue="Gradle.WallServiceTest.updateWithoutAdd (1)" />
         <item itemvalue="Gradle.WallServiceTest.updateWithAdd" />
