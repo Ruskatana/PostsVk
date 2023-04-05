@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bf0d3638-4f79-484a-9937-90a177dc6394" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/PostsVk.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/PostsVk.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/WallServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/WallServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,8 +65,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.WallServiceTest.shouldThrowPost">
-    <configuration name="AddTest.add" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.WallServiceTest.createCommentCorrect">
+    <configuration name="WallServiceTest.createCommentCorrect" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -80,7 +79,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;AddTest.add&quot;" />
+            <option value="&quot;WallServiceTest.createCommentCorrect&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -168,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.WallServiceTest.createCommentCorrect" />
         <item itemvalue="Gradle.WallServiceTest.shouldThrowPost" />
         <item itemvalue="Kotlin.PostsVkKt" />
         <item itemvalue="Gradle.WallServiceTest.updateWithoutAdd (1)" />
         <item itemvalue="Gradle.WallServiceTest.updateWithAdd" />
-        <item itemvalue="Gradle.AddTest.add" />
       </list>
     </recent_temporary>
   </component>
